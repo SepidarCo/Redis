@@ -17,13 +17,13 @@ namespace Redis
             people.Add(new Person(3, "nazanin"));
             people.Add(new Person(4, "shahrooz"));
 
-            // RedisProviderOld.Instance.SetCacheData(people, "People");
+             RedisProvider.Instance.SetCacheData(people, "People");
 
             //RedisProviderOld.Instance.RemoveAllData<Person>("People");
 
-            var model = RedisProvider.Instance.GetAllData<List<Person>>("People");
+            //var model = RedisProvider.Instance.GetAllData<List<Person>>("People");
 
-            Console.WriteLine(model);
+            //Console.WriteLine(model);
             Console.ReadKey();
 
         }

@@ -5223,19 +5223,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\a.fallah\\.nuget\\packages\\": {}
+    "C:\\Users\\a.bagheri\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitSepidarCo\\Redis\\Redis\\Redis.csproj",
+      "projectUniqueName": "C:\\Users\\a.bagheri\\Source\\Repos\\Redis\\Redis\\Redis.csproj",
       "projectName": "Redis",
-      "projectPath": "D:\\GitSepidarCo\\Redis\\Redis\\Redis.csproj",
-      "packagesPath": "C:\\Users\\a.fallah\\.nuget\\packages\\",
-      "outputPath": "D:\\GitSepidarCo\\Redis\\Redis\\obj\\",
+      "projectPath": "C:\\Users\\a.bagheri\\Source\\Repos\\Redis\\Redis\\Redis.csproj",
+      "packagesPath": "C:\\Users\\a.bagheri\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\a.bagheri\\Source\\Repos\\Redis\\Redis\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\a.fallah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\a.bagheri\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5243,10 +5243,12 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://azuredevops.asax.ir/tfs/AsaProjects/_packaging/Public/nuget/v3/index.json": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -5258,6 +5260,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "ServiceStack.Redis.Core": {
             "target": "Package",
@@ -5279,7 +5282,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
