@@ -43,10 +43,12 @@ SetObjectCachData on Redis:
                     return false;
                 }
             }
+
 						
 	SetObjectBactchCachData					
-						
-				public bool SetCacheData<T>(List<T> items, string nameOfCachedVariable)
+	
+					
+	public bool SetCacheData<T>(List<T> items, string nameOfCachedVariable)
         {
             try
             {
@@ -65,8 +67,10 @@ SetObjectCachData on Redis:
                 return false;
             }
         }
-						
+	
+					
 GetSingleData:
+
 
  public T GetSingleData<T>(string key)
         {
@@ -90,8 +94,10 @@ GetSingleData:
                 return default(T);
             }
         }
+
 						
 GetAllData:
+
 
  public List<T> GetAllData<T>(string nameOfCachedVariable)
         {
@@ -132,6 +138,7 @@ public bool RemoveAllData<T>(string nameOfCachedVariable)
                 return false;
             }
         }
+
 					
 Dispose:
 	
