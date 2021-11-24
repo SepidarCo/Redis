@@ -16,4 +16,26 @@ D:\GitSepidarCo\Redis\Redis\obj\Debug\netcoreapp3.1\Redis.csproj.CopyComplete
 D:\GitSepidarCo\Redis\Redis\obj\Debug\netcoreapp3.1\Redis.dll
 D:\GitSepidarCo\Redis\Redis\obj\Debug\netcoreapp3.1\Redis.pdb
 D:\GitSepidarCo\Redis\Redis\obj\Debug\netcoreapp3.1\Redis.genruntimeconfig.cache
+<<<<<<< HEAD
 D:\GitSepidarCo\Redis\Redis\obj\Debug\netcoreapp3.1\Redis.csprojAssemblyReference.cache
+=======
+C:\Users\a.bagheri\Source\Repos\Redis\Redis\bin\Debug\netcoreapp3.1\Redis.exe
+C:\Users\a.bagheri\Source\Repos\Redis\Redis\bin\Debug\netcoreapp3.1\Redis.deps.json
+C:\Users\a.bagheri\Source\Repos\Redis\Redis\bin\Debug\netcoreapp3.1\Redis.runtimeconfig.json
+C:\Users\a.bagheri\Source\Repos\Redis\Redis\bin\Debug\netcoreapp3.1\Redis.runtimeconfig.dev.json
+C:\Users\a.bagheri\Source\Repos\Redis\Redis\bin\Debug\netcoreapp3.1\Redis.dll
+C:\Users\a.bagheri\Source\Repos\Redis\Redis\bin\Debug\netcoreapp3.1\Redis.pdb
+C:\Users\a.bagheri\Source\Repos\Redis\Redis\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\a.bagheri\Source\Repos\Redis\Redis\bin\Debug\netcoreapp3.1\ServiceStack.Common.dll
+C:\Users\a.bagheri\Source\Repos\Redis\Redis\bin\Debug\netcoreapp3.1\ServiceStack.Interfaces.dll
+C:\Users\a.bagheri\Source\Repos\Redis\Redis\bin\Debug\netcoreapp3.1\ServiceStack.Redis.dll
+C:\Users\a.bagheri\Source\Repos\Redis\Redis\bin\Debug\netcoreapp3.1\ServiceStack.Text.dll
+C:\Users\a.bagheri\Source\Repos\Redis\Redis\obj\Debug\netcoreapp3.1\Redis.csproj.AssemblyReference.cache
+C:\Users\a.bagheri\Source\Repos\Redis\Redis\obj\Debug\netcoreapp3.1\Redis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\a.bagheri\Source\Repos\Redis\Redis\obj\Debug\netcoreapp3.1\Redis.AssemblyInfoInputs.cache
+C:\Users\a.bagheri\Source\Repos\Redis\Redis\obj\Debug\netcoreapp3.1\Redis.AssemblyInfo.cs
+C:\Users\a.bagheri\Source\Repos\Redis\Redis\obj\Debug\netcoreapp3.1\Redis.csproj.CoreCompileInputs.cache
+C:\Users\a.bagheri\Source\Repos\Redis\Redis\obj\Debug\netcoreapp3.1\Redis.dll
+C:\Users\a.bagheri\Source\Repos\Redis\Redis\obj\Debug\netcoreapp3.1\Redis.pdb
+C:\Users\a.bagheri\Source\Repos\Redis\Redis\obj\Debug\netcoreapp3.1\Redis.genruntimeconfig.cache
+>>>>>>> 767e880924f652ead0cd18afd55b91a8c2ee3199
