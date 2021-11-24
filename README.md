@@ -134,8 +134,9 @@ public bool RemoveAllData<T>(string nameOfCachedVariable)
         }
 					
 Dispose:
+	
 
- public void Dispose()
+	 public void Dispose()
         {
             Dispose(true);
             GC.SuppressFinalize(this);
