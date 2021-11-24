@@ -8,14 +8,13 @@ namespace Redis
     public class RedisProvider : IDisposable
     {
         Stopwatch sw = new Stopwatch();
-        public static string RedisHostAddress = "172.0.0.1"; //=> ConfigurationManager.AppSettings["RedisHostAddress"];
+        public static string RedisHostAddress = "127.0.0.1"; //=> ConfigurationManager.AppSettings["RedisHostAddress"];
         public static int RedisHostPort = 6379;  // => int.Parse(ConfigurationManager.AppSettings["RedisHostPort"]);
         public static string RedisPassword = "password";
 
         private static readonly object Instancelock = new object();
         private static RedisProvider _instance = null;
         private bool _disposed = false;
-
 
         public static RedisProvider Instance
         {
@@ -35,13 +34,12 @@ namespace Redis
             }
         }
 
-
-
         public bool SetCacheData<T>(T item, string key)
         {
             try
             {
-                using (IRedisClient client = new RedisClient(RedisHostAddress, RedisHostPort))
+                //using (IRedisClient client = new RedisClient(RedisHostAddress, RedisHostPort))
+                using (var client = new RedisClient())
                 {
                     // var item=  _client.GetConfig()();
                     var redis = client.As<T>();
@@ -135,6 +133,7 @@ namespace Redis
                 return false;
             }
         }
+      
         public void Dispose()
         {
             Dispose(true);

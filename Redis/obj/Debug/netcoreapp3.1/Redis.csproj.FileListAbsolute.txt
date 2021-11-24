@@ -16,3 +16,4 @@ D:\GitSepidarCo\Redis\Redis\obj\Debug\netcoreapp3.1\Redis.csproj.CopyComplete
 D:\GitSepidarCo\Redis\Redis\obj\Debug\netcoreapp3.1\Redis.dll
 D:\GitSepidarCo\Redis\Redis\obj\Debug\netcoreapp3.1\Redis.pdb
 D:\GitSepidarCo\Redis\Redis\obj\Debug\netcoreapp3.1\Redis.genruntimeconfig.cache
+D:\GitSepidarCo\Redis\Redis\obj\Debug\netcoreapp3.1\Redis.csprojAssemblyReference.cache

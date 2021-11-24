@@ -1,8 +1,5 @@
-﻿using ServiceStack.Redis;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Redis
 {
@@ -17,13 +14,14 @@ namespace Redis
             people.Add(new Person(3, "nazanin"));
             people.Add(new Person(4, "shahrooz"));
 
-            // RedisProviderOld.Instance.SetCacheData(people, "People");
+            RedisProvider.Instance.SetCacheData(people, "People");
 
-            //RedisProviderOld.Instance.RemoveAllData<Person>("People");
+            //RedisProvider.Instance.RemoveAllData<Person>("People");
 
             var model = RedisProvider.Instance.GetAllData<List<Person>>("People");
 
             Console.WriteLine(model);
+
             Console.ReadKey();
 
         }
