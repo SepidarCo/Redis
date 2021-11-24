@@ -19,6 +19,8 @@ namespace Redis
 
              RedisProvider.Instance.SetCacheData(people, "People");
 
+
+
             //RedisProviderOld.Instance.RemoveAllData<Person>("People");
 
             //var model = RedisProvider.Instance.GetAllData<List<Person>>("People");
