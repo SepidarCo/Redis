@@ -6,6 +6,12 @@ namespace Redis
 {
     public class Person
     {
+
+        public Person()
+        {
+                
+        }
+
         public Person(int id, string name)
         {
             this.Id = id;
