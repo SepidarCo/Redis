@@ -4,28 +4,29 @@
     "D:\\GitSepidarCo\\Redis\\Redis\\Redis.csproj": {}
   },
   "projects": {
-    "D:\\GitSepidarCo\\Redis\\Redis\\Redis.csproj": {
+    "D:\\GitSepidarCo\\Redis\\RedisProvider\\Provider.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitSepidarCo\\Redis\\Redis\\Redis.csproj",
-        "projectName": "Redis",
-        "projectPath": "D:\\GitSepidarCo\\Redis\\Redis\\Redis.csproj",
+        "projectUniqueName": "D:\\GitSepidarCo\\Redis\\RedisProvider\\Provider.csproj",
+        "projectName": "Provider",
+        "projectPath": "D:\\GitSepidarCo\\Redis\\RedisProvider\\Provider.csproj",
         "packagesPath": "C:\\Users\\a.fallah\\.nuget\\packages\\",
-        "outputPath": "D:\\GitSepidarCo\\Redis\\Redis\\obj\\",
+        "outputPath": "D:\\GitSepidarCo\\Redis\\RedisProvider\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\a.fallah\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -36,7 +37,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "ServiceStack.Redis.Core": {
               "target": "Package",
@@ -58,7 +60,71 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitSepidarCo\\Redis\\Redis\\Redis.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitSepidarCo\\Redis\\Redis\\Redis.csproj",
+        "projectName": "Redis",
+        "projectPath": "D:\\GitSepidarCo\\Redis\\Redis\\Redis.csproj",
+        "packagesPath": "C:\\Users\\a.fallah\\.nuget\\packages\\",
+        "outputPath": "D:\\GitSepidarCo\\Redis\\Redis\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\a.fallah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\GitSepidarCo\\Redis\\RedisProvider\\Provider.csproj": {
+                "projectPath": "D:\\GitSepidarCo\\Redis\\RedisProvider\\Provider.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "ServiceStack.Redis.Core": {
+              "target": "Package",
+              "version": "[5.13.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

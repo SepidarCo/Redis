@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Redis;
+using System;
 using System.Collections.Generic;
 
 namespace Redis
@@ -14,16 +15,13 @@ namespace Redis
             people.Add(new Person(3, "nazanin"));
             people.Add(new Person(4, "shahrooz"));
 
+           // RedisProvider.Instance.SetCacheData(people, "People");
 
-            RedisProvider.Instance.SetCacheData(people, "People");
+            RedisProvider.Instance.RemoveAllData<Person>("People");
 
-            //RedisProvider.Instance.SetCacheData(people, "People");
+            //var model = RedisProvider.Instance.GetAllData<List<Person>>("People");
 
-            //RedisProvider.Instance.RemoveAllData<Person>("People");
-
-            var model = RedisProvider.Instance.GetAllData<List<Person>>("People");
-
-            Console.WriteLine(model);
+            Console.WriteLine("done");
 
             Console.ReadKey();
 

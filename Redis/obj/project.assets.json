@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
+    "net5.0": {
       "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
         "type": "package",
         "compile": {
@@ -1405,6 +1405,19 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Threading.ThreadPool.dll": {}
+        }
+      },
+      "Redis/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "ServiceStack.Redis.Core": "5.13.2"
+        },
+        "compile": {
+          "bin/placeholder/Redis.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Redis.dll": {}
         }
       }
     }
@@ -5215,11 +5228,16 @@
         "system.threading.threadpool.4.3.0.nupkg.sha512",
         "system.threading.threadpool.nuspec"
       ]
+    },
+    "Redis/1.0.0": {
+      "type": "project",
+      "path": "../RedisProvider/Redis.csproj",
+      "msbuildProject": "../RedisProvider/Redis.csproj"
     }
   },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
-      "ServiceStack.Redis.Core >= 5.13.2"
+    "net5.0": [
+      "Redis >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5228,9 +5246,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitSepidarCo\\Redis\\Redis\\Redis.csproj",
-      "projectName": "Redis",
-      "projectPath": "D:\\GitSepidarCo\\Redis\\Redis\\Redis.csproj",
+      "projectUniqueName": "D:\\GitSepidarCo\\Redis\\Redis\\ConsoleProvider.csproj",
+      "projectName": "ConsoleProvider",
+      "projectPath": "D:\\GitSepidarCo\\Redis\\Redis\\ConsoleProvider.csproj",
       "packagesPath": "C:\\Users\\a.fallah\\.nuget\\packages\\",
       "outputPath": "D:\\GitSepidarCo\\Redis\\Redis\\obj\\",
       "projectStyle": "PackageReference",
@@ -5239,15 +5257,20 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.1"
+        "net5.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "projectReferences": {}
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "D:\\GitSepidarCo\\Redis\\RedisProvider\\Redis.csproj": {
+              "projectPath": "D:\\GitSepidarCo\\Redis\\RedisProvider\\Redis.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -5257,13 +5280,8 @@
       }
     },
     "frameworks": {
-      "netcoreapp3.1": {
-        "dependencies": {
-          "ServiceStack.Redis.Core": {
-            "target": "Package",
-            "version": "[5.13.2, )"
-          }
-        },
+      "net5.0": {
+        "targetAlias": "net5.0",
         "imports": [
           "net461",
           "net462",
@@ -5279,7 +5297,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

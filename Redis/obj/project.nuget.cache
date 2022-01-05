@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uM6IKxnp60B2uOllpZcGi3h9FY83j6HfLhy8Oq9pVi6Uv+eUfHOaf44/BspEaV0KxhccXuwsHXoy20lJLaY3IQ==",
+  "dgSpecHash": "Vq9muVclhbcAcgNyqdEIpQfHWPAthz1jNf89n5WZL6rmpR+RDyHyZIKf4iLCfv5LaChasOB1PF7WGUXTKCGl1A==",
   "success": true,
-  "projectFilePath": "D:\\GitSepidarCo\\Redis\\Redis\\Redis.csproj",
+  "projectFilePath": "D:\\GitSepidarCo\\Redis\\Redis\\ConsoleProvider.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\a.fallah\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\a.fallah\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
