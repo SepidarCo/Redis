@@ -10,14 +10,14 @@ namespace Redis
         {
             List<Person> people = new List<Person>();
 
-            people.Add(new Person(1, "ali"));
-            people.Add(new Person(2, "alireza"));
-            people.Add(new Person(3, "nazanin"));
-            people.Add(new Person(4, "shahrooz"));
+            for (int i = 0; i < 6000; i++)
+            {
+                people.Add(new Person(i, "ali"));
+            }
 
-           // RedisProvider.Instance.SetCacheData(people, "People");
+            RedisProvider.Instance.SetCacheData(people, "People");
 
-            RedisProvider.Instance.RemoveAllData<Person>("People");
+            //  RedisProvider.Instance.RemoveAllData<Person>("People");
 
             //var model = RedisProvider.Instance.GetAllData<List<Person>>("People");
 

@@ -14,6 +14,7 @@ namespace Redis
 
         private static readonly object Instancelock = new object();
         private static RedisProvider _instance = null;
+        private static RedisClient _client = null;
         private bool _disposed = false;
 
         public static RedisProvider Instance
@@ -27,6 +28,7 @@ namespace Redis
                         if (_instance == null)
                         {
                             _instance = new RedisProvider();
+                            _client = new RedisClient();
                         }
                     }
                 }
@@ -59,11 +61,11 @@ namespace Redis
             try
             {
                 // using (IRedisClient client = new RedisClient(RedisHostAddress, RedisHostPort))
-                using (var client = new RedisClient())
-                {
-                    var redisList = client.As<T>();
-                    redisList.Lists[nameOfCachedVariable].AddRange(items);
-                }
+                //using (var client = new RedisClient())
+                //{
+                var redisList = _client.As<T>();
+                redisList.Lists[nameOfCachedVariable].AddRange(items);
+                //}
 
                 return true;
             }
@@ -133,7 +135,7 @@ namespace Redis
                 return false;
             }
         }
-      
+
         public void Dispose()
         {
             Dispose(true);
