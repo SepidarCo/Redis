@@ -4,9 +4,8 @@ using System.Collections.Generic;
 
 namespace Api.Controllers
 {
-    [ApiController]
-    [Route("[controller]")]
-    public class PersonController : ControllerBase
+   
+    public class PersonController : GeneralController
     {
         [HttpGet]
         public IActionResult GetFromRedis()
@@ -14,5 +13,6 @@ namespace Api.Controllers
             var model = RedisProvider.Instance.GetAllData<List<Person>>("People");
             return Ok(model);
         }
+
     }
 }
